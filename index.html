@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ELDAGADO</title>
+    <link rel="stylesheet" href="style.css"> 
+ 
+</head>
+
+<body>
+
+    <header class="main-header">
+
+    <img
+        src="dagado.png"
+        alt="ELDAGADO gamer logó"
+        class="site-logo"
+    >
+
+    <h1>ELDAGADO</h1>
+     <h2>ÜDVÖZLÜNK A GAMER VILÁGBAN!</h2>
+        <h2>
+            Ahol a játék elkezdődik,
+            és a legendák megszületnek.
+        </h2>
+
+</header>
+<a href="shop.html" class="gamer-button">ELDAGADO shop</a>
+    <main class="welcome">
+       
+
+
+    </main>
+
+    
+
+
+<section class="social-section">
+
+    <section class="auth-section" id="fiok">
+    <h2>🎮 JÁTÉKOS FIÓK</h2>
+
+    <p class="auth-description">
+        Lépj be az ELDAGADO gamer közösségébe!
+    </p>
+
+    <div class="auth-box">
+
+        <div class="auth-tabs">
+            <button
+                type="button"
+                class="auth-tab active"
+                id="loginTab">
+                BEJELENTKEZÉS
+            </button>
+
+            <button
+                type="button"
+                class="auth-tab"
+                id="registerTab">
+                REGISZTRÁCIÓ
+            </button>
+        </div>
+
+        <!-- BEJELENTKEZÉS -->
+        <form id="loginForm" class="auth-form">
+            <h3>ÜDV ÚJRA ITT!</h3>
+            <p>Lépj be a fiókodba.</p>
+
+            <label for="loginEmail">E-mail-cím</label>
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="pelda@email.com"
+                required>
+
+            <label for="loginPassword">Jelszó</label>
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Jelszavad"
+                required>
+
+            <button type="submit" class="auth-submit">
+                BELÉPEK 🚀
+            </button>
+
+            <p class="auth-switch">
+                Még nincs fiókod?
+                <button type="button" id="showRegister">
+                    Regisztrálok!
+                </button>
+            </p>
+        </form>
+
+        <!-- REGISZTRÁCIÓ -->
+        <form id="registerForm" class="auth-form" hidden>
+            <h3>CSATLAKOZZ HOZZÁNK!</h3>
+            <p>Hozd létre a gamer fiókodat.</p>
+
+            <label for="registerUsername">Felhasználónév</label>
+            <input
+                type="text"
+                id="registerUsername"
+                placeholder="Gamer neved"
+                minlength="3"
+                maxlength="20"
+                required>
+
+            <label for="registerEmail">E-mail-cím</label>
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="pelda@email.com"
+                required>
+
+            <label for="registerPassword">Jelszó</label>
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Legalább 8 karakter"
+                minlength="8"
+                required>
+
+            <label for="confirmPassword">
+                Jelszó megerősítése
+            </label>
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Írd be újra a jelszavad"
+                minlength="8"
+                required>
+
+            <button type="submit" class="auth-submit">
+                FIÓK LÉTREHOZÁSA 🔥
+            </button>
+
+            <p class="auth-switch">
+                Már van fiókod?
+                <button type="button" id="showLogin">
+                    Bejelentkezés!
+                </button>
+            </p>
+        </form>
+
+        <p id="authMessage" class="auth-message" hidden></p>
+
+    </div>
+</section>
+    <h2>VÁLASSZ JÁTÉKOST</h2>
+
+    <div class="player-grid">
+        <button class="player-btn" data-player="gawros">
+            🎮 GAWROS
+        </button>
+
+        <button class="player-btn" data-player="booksy">
+            🎮 BOOKSY
+        </button>
+    </div>
+
+    <!-- GAWROS LINKJEI -->
+    <div class="social-panel" id="gawros" hidden>
+        <h3>GAWROS SOCIAL</h3>
+
+        <a class="contact-btn" href="GAWROS_TWITTER_LINK"
+           target="_blank" rel="noopener noreferrer">🐦 Twitter</a>
+
+        <a class="contact-btn" href="https://www.twitch.tv/gawros04hun"
+           target="_blank" rel="noopener noreferrer">🎥 Twitch</a>
+
+        <a class="contact-btn" href="https://www.youtube.com/@gawros04"
+           target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+
+        <a class="contact-btn" href="GAWROS_TIKTOK_LINK"
+           target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+
+        <a class="contact-btn" href="https://discord.gg/TeKBMDaw2H"
+           target="_blank" rel="noopener noreferrer">💬 Discord</a>
+    </div>
+
+    <!-- BOOKSY LINKJEI -->
+    <div class="social-panel" id="booksy" hidden>
+        <h3>BOOKSY SOCIAL</h3>
+
+        <a class="contact-btn" href="https://x.com/imbooksy"
+           target="_blank" rel="noopener noreferrer">🐦 Twitter</a>
+
+        <a class="contact-btn" href="https://twitch.tv/imbooksy"
+           target="_blank" rel="noopener noreferrer">🎥 Twitch</a>
+
+        <a class="contact-btn" href="https://www.youtube.com/@booksy7167"
+           target="_blank" rel="noopener noreferrer">▶ YouTube</a>
+
+        <a class="contact-btn" href="https://tiktok.com/@imbooksy"
+           target="_blank" rel="noopener noreferrer">🎵 TikTok</a>
+
+        <a class="contact-btn" href="https://discord.gg/TeKBMDaw2H"
+           target="_blank" rel="noopener noreferrer">💬 Discord</a>
+    </div>
+</section>
+
+<aside class="ad-sidebar ad-left">
+    <span class="ad-label">REKLÁM</span>
+    <div class="ad-content" id="leftAd"></div>
+</aside>
+
+<!-- JOBB OLDALI SZPONZOR -->
+<aside class="ad-sidebar ad-right">
+    <span class="ad-label">SZPONZOR</span>
+    <div class="ad-content" id="rightAd"></div>
+</aside>
+
+<script>
+const ads = [
+    {
+        icon: "🎮",
+        title: "GAMING ZÓNA",
+        description: "Kövess Twitch-en!",
+        link: "https://twitch.tv/imbooksy",
+        button: "TWITCH ↗"
+    },
+    {
+        icon: "🔥",
+        title: "BOOKSY",
+        description: "Nézd meg a videóimat!",
+        link: "https://www.youtube.com/@booksy7167",
+        button: "YOUTUBE ↗"
+    },
+    {
+        icon: "🎬",
+        title: "YOUTUBE",
+        description: "Nézz gaming videókat!",
+        link: "https://www.youtube.com/@booksy7167",
+        button: "VIDEÓK ↗"
+    }
+];
+
+let leftIndex = 0;
+let rightIndex = 1;
+
+function showAd(elementId, ad) {
+    const container = document.getElementById(elementId);
+
+    container.innerHTML = `
+        <a class="ad-card"
+           href="${ad.link}"
+           target="_blank"
+           rel="noopener noreferrer">
+            <span class="ad-icon">${ad.icon}</span>
+            <strong>${ad.title}</strong>
+            <p>${ad.description}</p>
+            <span class="ad-link">${ad.button}</span>
+        </a>
+    `;
+}
+
+function rotateAds() {
+    showAd("leftAd", ads[leftIndex]);
+    showAd("rightAd", ads[rightIndex]);
+
+    leftIndex = (leftIndex + 1) % ads.length;
+    rightIndex = (rightIndex + 1) % ads.length;
+}
+
+rotateAds();
+setInterval(rotateAds, 5000);
+</script>
+
+<script>
+    const playerButtons = document.querySelectorAll(".player-btn");
+    const socialPanels = document.querySelectorAll(".social-panel");
+
+    playerButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const selectedPlayer = button.dataset.player;
+            const selectedPanel = document.getElementById(selectedPlayer);
+            const alreadyOpen = !selectedPanel.hidden;
+
+            socialPanels.forEach(panel => {
+                panel.hidden = true;
+            });
+
+            playerButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            if (!alreadyOpen) {
+                selectedPanel.hidden = false;
+                button.classList.add("active");
+            }
+        });
+    });
+</script>
+
+
+
+
+<section class="tournament-section">
+
+    <h2>🏆 GAMER VERSENYEK</h2>
+
+    <button
+        class="gamer-button"
+        id="tournamentToggle"
+        aria-expanded="false"
+        aria-controls="tournamentPanel">
+        🏆 AKTUÁLIS VERSENYEK
+    </button>
+
+    <div class="tournament-panel" id="tournamentPanel" hidden>
+
+        <h3>AKTUÁLIS VERSENYEK</h3>
+
+        <div class="tournament-card">
+            <div>
+                <h4>🎮 Cs2 verseny</h4>
+                <p>Időpont: Hamarosan</p>
+                <p>Státusz: Nevezés hamarosan</p>
+            </div>
+            <span class="tournament-status">HAMAROSAN</span>
+        </div>
+
+        <div class="tournament-card">
+            <div>
+                <h4>⚔️ R6 verseny</h4>
+                <p>Időpont: 04.10 18:20</p>
+                <p>Státusz: Nevezés hamarosan</p>
+            </div>
+            <span class="tournament-status">HAMAROSAN</span>
+        </div>
+
+        <div class="tournament-card">
+            <div>
+                <h4>🔥 Egyéb gamer versenyek</h4>
+                <p>Új versenyek hamarosan!</p>
+            </div>
+            <span class="tournament-status">Hamarosan</span>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    const tournamentToggle =
+        document.getElementById("tournamentToggle");
+
+    const tournamentPanel =
+        document.getElementById("tournamentPanel");
+
+    tournamentToggle.addEventListener("click", () => {
+        const isOpen = !tournamentPanel.hidden;
+
+        tournamentPanel.hidden = isOpen;
+
+        tournamentToggle.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+        );
+
+        tournamentToggle.textContent = isOpen
+            ? "🏆 AKTUÁLIS VERSENYEK"
+            : "✕ VERSENYEK BEZÁRÁSA";
+    });
+</script>
+
+<footer>
+        © 2026 ELDAGADO | Minden jog fenntartva
+         <h2>Gamerektől Gamereknek</h2>
+    </footer>
+
+
+    
+<script src="script.js"></script>
+</body>
+</html>
+
